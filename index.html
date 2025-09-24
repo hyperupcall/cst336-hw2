@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="./script.js" type="module"></script>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Hangman</title>
+	</head>
+	<body>
+		<main>
+			<div class="left">
+				<h1>Hangman Game</h1>
+				<img id="hangman-image" src="./images/hangman-1.png" />
+				<p>
+					Image courtesey of creator
+					&OpenCurlyDoubleQuote;9664c4&CloseCurlyDoubleQuote; on
+					<a href="https://pixelartmaker.com/art/201d6cdbc293ff9"
+						>pixelartmaker.com</a
+					>.
+				</p>
+				<br />
+				<p style="font-size: 14px">
+					<b>How to play:</b> A random word has been selected. Guess the
+					letters or the word by using the input box. If the letter is not
+					correct, or if the word is not correct, or
+					<em>if the string has already been guessed</em>, a try will be
+					deducted. Guess the word before the person is hanged!
+				</p>
+			</div>
+			<div class="divider divider-vertical"></div>
+			<div class="right">
+				<p id="word">_</p>
+				<div class="guess-wrapper">
+					<label>
+						Enter guess:
+						<input type="text" id="guess-text" />
+					</label>
+					<label>
+						<input type="submit" value="Submit" id="guess-submit" />
+					</label>
+				</div>
+				<div class="history-wrapper">
+					<p>Guess History</p>
+					<div id="guess-history"></div>
+				</div>
+				<div class="final-game-status" style="display: none">
+					<div class="divider divider-horizontal"></div>
+					<p id="game-status"></p>
+					<label>
+						<input type="button" value="Play Again" id="play-again" />
+					</label>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
