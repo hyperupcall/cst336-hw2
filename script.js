@@ -4,7 +4,7 @@ const guessTextEl = document.querySelector('#guess-text')
 const guessSubmitEl = document.querySelector('#guess-submit')
 const guessHistoryEl = document.querySelector('#guess-history')
 
-const /** @type string[] */ words = ((await(await fetch("/words.txt")).text()).split(
+const /** @type string[] */ words = ((await(await fetch("./words.txt")).text()).split(
 	"\n",
 ))
 let randomWord = ''
