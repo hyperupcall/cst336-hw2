@@ -56,7 +56,7 @@ guessSubmitEl.addEventListener('click', (/** @type {Event} */ ev) => {
 		document.querySelector('.final-game-status').style.display = 'block'
 		correctStatus = 'correct'
 		pastWords.push(randomWord)
-	} else if (randomWord.indexOf(guess) !== -1) {
+	} else if (randomWord.indexOf(guess) !== -1 && guess.length === 1) {
 		// Player guess was correct.
 		if (guesses.filter(g => g === guess).length > 1) {
 			correctStatus = 'incorrect'
